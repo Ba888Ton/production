@@ -20,6 +20,10 @@
   "exclude": [
     "node_modules"
   ],
+  "base-url": ".",
+  "paths": {
+    "*": ["./src/*"]
+  },
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"
