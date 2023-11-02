@@ -9,6 +9,10 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
   },
   "include": [
     "next-env.d.ts",
@@ -20,10 +24,6 @@
   "exclude": [
     "node_modules"
   ],
-  "base-url": ".",
-  "paths": {
-    "*": ["./src/*"]
-  },
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"
