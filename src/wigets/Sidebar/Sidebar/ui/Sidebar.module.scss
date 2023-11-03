@@ -1,0 +1,18 @@
+.Sidebar {
+  display: flex;
+  flex-direction: column;
+  background: #fffeee;
+  width: var(--sidebar-width);
+  height: calc(100vh - var(--navbar-heigth));
+  transition: width 0.3s;
+  padding: 0.5rem;
+}
+.SidebarTop {
+  margin-bottom: auto;
+}
+.expanded { 
+  width: var(--sidebar-expanded-width);
+}
+.rotate {
+  transform: rotate(180deg);
+}

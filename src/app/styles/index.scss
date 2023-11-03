@@ -14,10 +14,20 @@
   font: var(--font-m);
   background: var(--bg-color);
   color: var(--primary-color);
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .content {
   background: aliceblue;
   color: cadetblue;
+}
+
+.content-container {
+  display: flex;
+}
+
+.page-container {
+  flex: 1;
 }
