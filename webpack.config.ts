@@ -21,6 +21,6 @@ export default (env: BuildEnv): Configuration => {
     mode,
     paths,
     isDev,
-    port: PORT
+    port: PORT,
   })
 }
