@@ -1,8 +1,8 @@
 import classes from './AboutPage.module.scss'
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next'
 
-export default function AboutPage({}) {
-  const { t } = useTranslation('about');
+export default function AboutPage (): React.ReactElement<'div'> {
+  const { t } = useTranslation('about')
 
   return (
     <div>

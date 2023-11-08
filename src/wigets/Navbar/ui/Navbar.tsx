@@ -1,15 +1,15 @@
-import { classNames } from "helpers/classNames/classNames";
-import cls from "./Navbar.module.scss"
-import { AppLink, AppLinkTheme } from "shared/ui/AppLink/AppLink";
-import { useTranslation } from "react-i18next";
+import { classNames } from 'helpers/classNames/classNames'
+import cls from './Navbar.module.scss'
+import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink'
+import { useTranslation } from 'react-i18next'
+import { type ReactElement } from 'react'
 
 interface NavbarProps {
-  className?: string;
+  className?: string
 }
 
-export function Navbar({className}: NavbarProps) {
-
-  const {t} = useTranslation();
+export const Navbar = ({ className }: NavbarProps): ReactElement<NavbarProps> => {
+  const { t } = useTranslation()
 
   return (
     <div className={classNames(cls.Navbar, {}, [className])}>
@@ -20,4 +20,3 @@ export function Navbar({className}: NavbarProps) {
     </div>
   )
 }
-

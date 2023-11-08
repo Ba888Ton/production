@@ -1,5 +1,5 @@
-import { ButtonHTMLAttributes, FC } from 'react';
-import { classNames } from 'helpers/classNames/classNames';
+import { type ButtonHTMLAttributes, type FC } from 'react'
+import { classNames } from 'helpers/classNames/classNames'
 import cls from './Button.module.scss'
 
 export enum ThemeButton {
@@ -7,22 +7,21 @@ export enum ThemeButton {
   WIDE = 'wide',
 }
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  className?: string;
-  theme?: ThemeButton;
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  className?: string
+  theme?: ThemeButton
 }
 
 export const Button: FC<ButtonProps> = (props) => {
-
   const {
     className,
     theme,
     children,
     ...otherProps
-  } = props;
+  } = props
 
   return (
-    <button 
+    <button
       className={classNames(cls.Button, {}, [className, cls[theme]])}
       {...otherProps}
     >

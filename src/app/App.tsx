@@ -1,16 +1,15 @@
-import { useTheme } from "app/providers/ThemeProvider"
-import { classNames } from "helpers/classNames/classNames"
+import { useTheme } from 'app/providers/ThemeProvider'
+import { classNames } from 'helpers/classNames/classNames'
 import './styles/index.scss'
-import { AppRouter } from "./providers/router"
-import { Navbar } from "../wigets/Navbar"
-import { ThemeSwitcher } from "wigets/ThemeSwitcher";
-import { Sidebar } from "wigets/Sidebar"
-import { Suspense } from "react"
-import { LanguageSwitcher } from "wigets/LanguageSwitcher"
+import { AppRouter } from './providers/router'
+import { Navbar } from '../wigets/Navbar'
+import { ThemeSwitcher } from 'wigets/ThemeSwitcher'
+import { Sidebar } from 'wigets/Sidebar'
+import { Suspense } from 'react'
+import { LanguageSwitcher } from 'wigets/LanguageSwitcher'
 
-
-export default function App() {
-  const { theme } = useTheme();
+export default function App (): React.ReactElement {
+  const { theme } = useTheme()
 
   return (
     <div className={classNames('app', {}, [theme])}>

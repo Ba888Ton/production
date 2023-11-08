@@ -1,8 +1,8 @@
-import { Suspense } from "react"
-import { Routes, Route } from "react-router-dom"
-import { routeConfig } from "shared/config/routeConfig"
+import { Suspense } from 'react'
+import { Routes, Route } from 'react-router-dom'
+import { routeConfig } from 'shared/config/routeConfig'
 
-const Fallback = () => {
+const Fallback = (): React.ReactElement<'div'> => {
   return (
     <div className="eee">
       ... Loading ...
@@ -10,7 +10,7 @@ const Fallback = () => {
   )
 }
 
-export const AppRouter = () => {
+export const AppRouter = (): React.ReactElement<'div'> => {
   return (
     <Suspense fallback={<Fallback />}>
       <div className="page-container">
