@@ -4,6 +4,7 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import { type WebpackPluginInstance } from 'webpack/types'
 import { type BuildOptions } from './types/config'
 import webpack from 'webpack'
+import ESLintPlugin from 'eslint-webpack-plugin'
 
 export function buildPlugins ({ paths, isDev }: BuildOptions): WebpackPluginInstance[] {
   const plugins = [
@@ -21,6 +22,9 @@ export function buildPlugins ({ paths, isDev }: BuildOptions): WebpackPluginInst
     }),
     new webpack.DefinePlugin({
       __IS_DEV__: JSON.stringify(isDev),
+    }),
+    new ESLintPlugin({
+      extensions: ['ts', 'tsx'],
     }),
   ]
   if (isDev) {
