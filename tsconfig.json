@@ -20,7 +20,7 @@
     "**/*.tsx",
     "**/**/*.ts",
     "**/**/*.tsx"
-  ],
+, "src/helpers/classNames/classNames.test.js"  ],
   "exclude": [
     "node_modules"
   ],
