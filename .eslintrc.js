@@ -44,9 +44,10 @@ module.exports = {
     "@typescript-eslint/comma-dangle": "off",
     "comma-dangle": ["warn", "always-multiline"],
     "@typescript-eslint/naming-convention": "off",
+    "@typescript-eslint/no-unused-vars": ["off", { "vars": "local" }],
     
     "@typescript-eslint/strict-boolean-expressions": [0], // not shure
-    "@typescript-eslint/explicit-function-return-type": [1],
+    "@typescript-eslint/explicit-function-return-type": [0],
     "react/no-deprecated": "off",
   }
 }

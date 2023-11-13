@@ -14,6 +14,6 @@ describe('classNames', () => {
     expect(classNames('class', { conditional: true, conditional2: false }, ['class1'])).toBe('class class1 conditional')
   })
   test('class with falsy conditional', () => {
-    expect(classNames('class', { conditional: true, conditional2: true }, ['class1'])).toBe('class class1 conditional2 conditional')
+    expect(classNames('class', { conditional: true, conditional2: true }, ['class1'])).toBe('class class1 conditional conditional2')
   })
 })

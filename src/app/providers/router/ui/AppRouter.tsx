@@ -1,18 +1,11 @@
 import { Suspense } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { routeConfig } from 'shared/config/routeConfig'
-
-const Fallback = (): React.ReactElement<'div'> => {
-  return (
-    <div className="eee">
-      ... Loading ...
-    </div>
-  )
-}
+import { PageLoader } from 'wigets/PageLoader/'
 
 export const AppRouter = (): React.ReactElement<'div'> => {
   return (
-    <Suspense fallback={<Fallback />}>
+    <Suspense fallback={<PageLoader />}>
       <div className="page-container">
         <Routes>
           {Object.values(routeConfig).map(({ path, element }) => {
