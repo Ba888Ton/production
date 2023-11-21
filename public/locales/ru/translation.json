@@ -1,7 +1,9 @@
 {
-  "language":"Язык",
-  "main":"Главная",
-  "to main":"На главную",
+  "language": "Язык",
+  "main": "Главная",
+  "to main": "На главную",
   "to about": "В описание",
-  "page not found": "Страница не найдена"
+  "page not found": "Страница не найдена",
+  "error occured": "Возникла ошибка\n",
+  "reload": "Перезагрузить"
 }

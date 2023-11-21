@@ -1,7 +1,9 @@
 {
   "language": "language",
   "main": "Main",
-  "to main":"To main",
+  "to main": "To main",
   "to about": "To about",
-  "page not found": "Page not found"
+  "page not found": "Page not found",
+  "error occured": "Error occured",
+  "reload": "Reload"
 }
